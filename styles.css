@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Monument Extended";
+  src: url("assets/fonts/MonumentExtended-Regular.otf") format("otf"),
+    url("assets/fonts/MonumentExtended-Ultrabold.otf") format("otf");
+}
+
 html,
 body {
   margin: 0;
@@ -129,7 +135,7 @@ nav {
   margin-top: 80px;
 }
 
-.text-promo > span {
+.text-promo>span {
   margin-right: 10px;
   font-family: "Monument Extended", sans-serif;
   font-size: 1.4rem;
@@ -295,7 +301,9 @@ img {
 
   .projects {
     position: relative;
-    left: 50%;
+    transform: inherit;
+    width: inherit;
+    left: 20px;
     top: 30px;
   }
 }

@@ -21,11 +21,11 @@
 
 <body>
     <!-- loader  -->
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <div class="loader">
-            <!-- <img class="loader-img" src="./scissors.svg" alt="scissors"> -->
+        <img class="loader-img" src="./scissors.svg" alt="scissors">
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <!-- nav  -->
         <nav class="menu">
@@ -33,14 +33,14 @@
                 <span class="menu-link">BLB</span>
                 <span class="text--sm">Coiffure</span>
             </div>
-            <img class="img-logo" src="./scissors.svg" alt="scissors">
+            <img class="img-logo" src="assets/img/scissors.svg" alt="scissors">
         </nav>
 
         <!-- hero image  -->
         <div class="wrapper-img">
             <div class="box"></div>
             <div>
-                <img class="image" src="hair-dryer.jpg">
+                <img class="image" src="assets/img/hair-dryer.jpg">
             </div>
         </div>
 
@@ -58,15 +58,15 @@
 
         <div class="content">
             <h3>A propos</h3>
-            <p>Aurélie, coiffeuse à domicile, secteur Boissise la Bertrand ( + de 20 ans d'éxpèriences)
+            <p>Aurélie, coiffeuse à domicile, secteur Boissise la Bertrand avec + de 20 ans d'éxpèriences.
                 Je vous propose mes services à votre domicile afin que vous passiez un agréable moment avec tout le
                 confort d'un salon.
                 Je réalise coupes, chignons, colorations mèches, patines, coiffures de soirée et permanente.
                 Je travaille exclusivement avec L'oréal professionnel et Schwarzkopf.
                 <br><br>N'hésitez pas à prendre rendez-vous !</p>
             <div class="content-partners">
-                <img src="./loreal.png" alt="loreal">
-                <img src="./schwarzkopf.png" alt="schwarzkopf">
+                <img src="assets/img/loreal.png" alt="loreal">
+                <img src="assets/img/schwarzkopf.png" alt="schwarzkopf">
             </div>
         </div>
 
@@ -162,7 +162,7 @@
                     <span class="menu-link">BLB</span>
                     <span class="text--sm">Coiffure</span>
                 </div>
-                <img class="img-logo footer-logo" src="./scissors-white.svg" alt="scissors">
+                <img class="img-logo footer-logo" src="assets/img/scissors-white.svg" alt="scissors">
             </nav>
             <p class="footer-credit">©2021 | BLB Coiffure </p>
         </div>
@@ -190,52 +190,52 @@
 
         var tl = new TimelineMax();
 
-        TweenMax.to(".wrapper", 2, {
-            top: "-100%",
-            ease: Expo.easeInOut,
-            delay: 2.6
-        });
+        // TweenMax.to(".wrapper", 2, {
+        //     top: "-100%",
+        //     ease: Expo.easeInOut,
+        //     delay: 2.6
+        // });
 
-        tl.from(".loader", 1.8, {
-            scaleY: "0%",
-            y: 80,
-            ease: Expo.easeInOut,
-            delay: .7,
-            transformOrigin: "50% 100%"
-        });
+        // tl.from(".loader", 1.8, {
+        //     scaleY: "0%",
+        //     y: 80,
+        //     ease: Expo.easeInOut,
+        //     delay: .7,
+        //     transformOrigin: "50% 100%"
+        // });
 
-        tl.to(".loader", 1.8, {
-            height: "20vh",
-            scaleY: "0%",
-            ease: Expo.easeInOut,
-            transformOrigin: "0% -100%"
-        });
+        // tl.to(".loader", 1.8, {
+        //     height: "20vh",
+        //     scaleY: "0%",
+        //     ease: Expo.easeInOut,
+        //     transformOrigin: "0% -100%"
+        // });
 
         TweenMax.to(".box", 2.4, {
             y: "-100%",
             ease: Expo.easeInOut,
-            delay: 2.9,
+            delay: .3,
         });
 
         var tl = new TweenMax.staggerFrom(".header-1", 2, {
             opacity: 0,
             y: 30,
             ease: Expo.easeInOut,
-            delay: 2.9
+            delay: .4
         }, 0.4);
 
-        var tl = new TweenMax.staggerFrom(".menu > div", 2, {
+        var tl = new TweenMax.staggerFrom(".menu", 2, {
             opacity: 0,
             y: 30,
             ease: Expo.easeInOut,
-            delay: 3
+            delay: .5
         }, 0.1);
 
         var tl = new TweenMax.staggerFrom(".hero-container > div", 2, {
             opacity: 0,
             y: 30,
             ease: Expo.easeInOut,
-            delay: 3
+            delay: .6
         }, 0.1);
     </script>
 </body>
