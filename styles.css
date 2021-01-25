@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Monument Extended";
-  src: url("assets/fonts/MonumentExtended-Regular.otf") format("otf"),
-    url("assets/fonts/MonumentExtended-Ultrabold.otf") format("otf");
+  font-family: "Monument";
+  src: url("assets/fonts/MonumentExtended-Regular.otf"),
+    url("assets/fonts/MonumentExtended-Ultrabold.otf");
 }
 
 html,
@@ -10,7 +10,7 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  font-family: "Monument Extended", sans-serif;
+  font-family: "Monument", sans-serif;
 }
 
 .flex {
@@ -19,8 +19,16 @@ body {
   flex-wrap: wrap;
 }
 
+.col-8 {
+  width: 60%;
+}
+
 .col-6 {
   width: 45%;
+}
+
+.col-4 {
+  width: 30%;
 }
 
 .content {
@@ -273,6 +281,12 @@ img {
 /* media queries  */
 
 @media (max-width: 900px) {
+
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+
   .wrapper-img {
     width: 90%;
   }
@@ -295,6 +309,16 @@ img {
     width: 100%;
   }
 
+  .col-8 {
+    width: 100%;
+  }
+  
+  
+  .col-4 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
   .content-partners>img {
     width: 150px;
   }
@@ -302,7 +326,7 @@ img {
   .projects {
     position: relative;
     transform: inherit;
-    width: inherit;
+    width: fit-content;
     left: 20px;
     top: 30px;
   }
