@@ -49,7 +49,11 @@
         <!-- header  -->
         <div class="header">
             <h1 class="header-1">Aurélie</h1>
-            <h2 style="display: none;">Coiffeur à domicile</h2>
+        </div>
+
+        <div class="header-2">
+            <h2 class="text">Coiffeuse à domicile</h2>
+            <h3 class="text small">Boissise la Bertrand et alentours</h3>
         </div>
 
         <!-- hero-container  -->
@@ -131,6 +135,10 @@
                     <div class="row">
                         <h4>Couleurs</h4>
                         <span>25€</span>
+                    </div>
+                    <div class="row">
+                        <h4>Permanente cheveux courts</h4>
+                        <span>à partir 30€</span>
                     </div>
                     <div class="row">
                         <h4>Chignons</h4>
@@ -234,6 +242,13 @@
             ease: Expo.easeInOut,
             delay: .4
         }, 0.4);
+
+        var tl = new TweenMax.staggerFrom(".header-2", 2, {
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut,
+            delay: .4
+        }, 0.5);
 
         var tl = new TweenMax.staggerFrom(".menu", 2, {
             opacity: 0,
